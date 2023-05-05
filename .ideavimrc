@@ -5,7 +5,6 @@ set ideajoin
 
 map f <Plug>(easymotion-f)
 map F <Plug>(easymotion-F)
-nnoremap <C-w> :bd<CR>
 nnoremap dd "_dd
 nnoremap p "yp
 nnoremap <Leader>p "+p
