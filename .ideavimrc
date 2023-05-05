@@ -19,6 +19,7 @@ nnoremap ;a :action GotoFile<CR>
 nnoremap ;s :action GotoClass<CR>
 
 imap jk <Esc>
+imap <C-k> :action ParameterInfo<CR>
 
 vmap f <Plug>(easymotion-f)
 vmap F <Plug>(easymotion-F)
