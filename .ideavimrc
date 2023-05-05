@@ -17,6 +17,7 @@ nnoremap <C-y> 10<C-y>
 nnoremap <C-l> :bd<CR>
 nnoremap ;a :action GotoFile<CR>
 nnoremap ;s :action GotoClass<CR>
+nnoremap <C-w>c :bd<CR>
 
 imap jk <Esc>
 imap <C-k> :action ParameterInfo<CR>
