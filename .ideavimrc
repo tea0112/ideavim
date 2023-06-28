@@ -1,33 +1,30 @@
 let mapleader=" "
 
-set easymotion
-set ideajoin
+set ignorecase
 
-map f <Plug>(easymotion-f)
-map F <Plug>(easymotion-F)
 nnoremap dd "_dd
-nnoremap p "yp
-nnoremap <Leader>p "+p
 nnoremap yy "yyy
 nnoremap x "yx
-nnoremap <Leader>y "+y
-nnoremap E 2e
-nnoremap <C-e> 10<C-e>
-nnoremap <C-y> 10<C-y>
-nnoremap <C-l> :bd<CR>
-nnoremap ;a :action GotoFile<CR>
-nnoremap ;s :action GotoClass<CR>
-nnoremap <C-w>c :bd<CR>
+nnoremap y "yy
+nnoremap p "yp
+nnoremap ,x "+x
+nnoremap ,e "+y
+nnoremap ,r "+p
+nnoremap <Backspace> <C-6>
+
+;Mappings to <Action> don't work with noremap. If you know the case when it's needed, please let us know.
+map <Leader>e <Action>(ShowErrorDescription)
+map ,a <Action>(GotoClass)
+map ,g <Action>(SearchEverywhere)
+map <C-w>c :bd<CR>
 
 imap jk <Esc>
-imap <C-k> :action ParameterInfo<CR>
+imap <C-k> <Action>(ParameterInfo)
 
-vmap f <Plug>(easymotion-f)
-vmap F <Plug>(easymotion-F)
-vnoremap y "yy
 vnoremap d "_d
-vnoremap p "yp
-vnoremap <Leader>p "+p
-vnoremap <Leader>y "+y
-vnoremap <Leader>x "+x
 vnoremap x "yx
+vnoremap y "yy
+vnoremap p "yp
+vnoremap ,x "+x
+vnoremap ,e "+y
+vnoremap ,r "+p
